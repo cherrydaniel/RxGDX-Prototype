@@ -1,0 +1,11 @@
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+eclipse.project.name = appName + '-core'
+
+dependencies {
+	api project(":rxgdx")
+	api "com.badlogicgames.gdx:gdx:$gdxVersion"
+	api "com.kotcrab.vis:vis-ui:$visUiVersion"
+	implementation "io.reactivex.rxjava3:rxjava:$rxJavaVersion"
+	implementation "junit:junit:$junitVersion"
+	implementation "org.mockito:mockito-core:$mockitoVersion"
+}

@@ -1,0 +1,2 @@
+include ':rxgdx'
+include 'lwjgl3', 'android', 'core'

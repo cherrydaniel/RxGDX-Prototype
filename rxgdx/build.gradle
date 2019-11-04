@@ -1,0 +1,13 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api "com.badlogicgames.gdx:gdx:$gdxVersion"
+    api "com.kotcrab.vis:vis-ui:$visUiVersion"
+    implementation "io.reactivex.rxjava3:rxjava:$rxJavaVersion"
+    implementation "junit:junit:$junitVersion"
+    implementation "org.mockito:mockito-core:$mockitoVersion"
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
